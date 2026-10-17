@@ -8,5 +8,5 @@ export const ORB: OrbItem[] = [
   { id:5, title:"Node.js",         date:"2023–Now", icon:"node",   color:"#68a063", relatedIds:[3,7], status:"completed",  energy:78, desc:"Server-side JavaScript, REST APIs, and Vercel serverless functions powering backend logic." },
   { id:6, title:"5 Languages",     date:"Born with it",icon:"globe",color:"#ff6b9d",relatedIds:[4,8],status:"completed",  energy:95, desc:"EN · FR · ES · PT · YO — I write software for everyone. Multilingualism shapes how I think about UX." },
   { id:7, title:"CSS / Tailwind",  date:"2022–Now", icon:"css",    color:"#38bdf8", relatedIds:[1,5], status:"completed",  energy:90, desc:"Utility-first CSS for rapid UI. Paired with shadcn/ui for accessible, reusable, beautiful component libraries." },
-  { id:8, title:"CS Student",      date:"2024–Now", icon:"code",   color:"#a78bfa", relatedIds:[4,6], status:"in-progress",energy:70, desc:"Currently enrolled in CSE 111. Focused on algorithms, data structures, and software engineering fundamentals." },
+  { id:8, title:"Software Dev",   date:"2024–Now", icon:"code",   color:"#a78bfa", relatedIds:[4,6], status:"in-progress",energy:70, desc:"Software Development student at Brigham Young University Idaho. Focused on building bespoke solutions, algorithms, and full-stack software architecture." },
 ];

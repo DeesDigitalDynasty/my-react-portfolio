@@ -46,15 +46,40 @@ export function About({ T, visible }: { T: Theme; visible: boolean }) {
         >
           <div>
             <p style={{ color: T.muted, lineHeight: 1.9, marginBottom: 14, fontSize: 14 }}>
-              I'm <span style={{ color: T.text, fontWeight: 600 }}>Oludayo Oluboyede</span> — a
-              passionate web developer and CS student based in Ibadan, Nigeria 🇳🇬. I love building
-              things that live on the internet, from AI emotional support apps to Python data tools.
+              I'm <span style={{ color: T.text, fontWeight: 600 }}>Oludayo Oluboyede</span>, a
+              passionate web developer and Software Development (currently studying said course in Brigham Young University Idaho) student based in Ibadan, Nigeria{" "}
+              <span
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  verticalAlign: "middle",
+                  margin: "0 2px",
+                }}
+                title="Nigeria"
+                aria-label="Nigeria Flag"
+              >
+                <svg
+                  width="18"
+                  height="12"
+                  viewBox="0 0 18 12"
+                  style={{
+                    borderRadius: 2,
+                    boxShadow: "0 0 0 1px rgba(0,0,0,0.15)",
+                    verticalAlign: "middle",
+                    display: "inline-block",
+                  }}
+                >
+                  <rect width="6" height="12" fill="#008751" />
+                  <rect x="6" width="6" height="12" fill="#ffffff" />
+                  <rect x="12" width="6" height="12" fill="#008751" />
+                </svg>
+              </span>
+              . I love building things that live on the internet, from AI emotional support apps to Python data tools and everything inbetween.
             </p>
 
             <p style={{ color: T.muted, lineHeight: 1.9, marginBottom: 30, fontSize: 14 }}>
               Currently working on{" "}
-              <span style={{ color: T.accent, fontWeight: 600 }}>Talk It Through</span> and studying
-              CSE 111. I build across five natural language ecosystems.
+              <span style={{ color: T.accent, fontWeight: 600 }}>Talk It Through</span> and studying, building bespoke solutions for clients, both individuals and SMEs (Some of which is Top Secret. Shhh! ). I build across five natural language ecosystems.
             </p>
             <div
               style={{

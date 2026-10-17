@@ -178,7 +178,7 @@ export function Hero({ T }: { T: Theme }) {
             opacity: 0.8,
           }}
         >
-          Drag to spin the orbit &nbsp;·&nbsp; Click any node to explore
+          Swipe or drag to spin the orbit &nbsp;·&nbsp; Tap any node to explore
         </p>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "center" }}>
           <button
