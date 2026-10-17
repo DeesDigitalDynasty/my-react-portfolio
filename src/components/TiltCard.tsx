@@ -47,10 +47,51 @@ export function TiltCard({ p, T }: { p: Project; T: Theme }) {
           boxShadow: hov ? `0 18px 44px ${c}22` : "none",
         }}
       >
-        <div style={{ fontSize: 30, marginBottom: 10 }}>{p.emoji}</div>
-        <h3 style={{ color: T.text, fontSize: 15, marginBottom: 7, fontWeight: 700 }}>{p.title}</h3>
-        <p style={{ color: T.muted, fontSize: 13, lineHeight: 1.7, marginBottom: 14 }}>{p.desc}</p>
-        <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 14 }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 12 }}>
+          <div
+            style={{
+              width: 32,
+              height: 3,
+              borderRadius: 2,
+              background: c,
+              opacity: 0.8,
+            }}
+          />
+          <span
+            style={{
+              fontSize: 10,
+              fontFamily: "'Orbitron','Courier New',monospace",
+              color: T.muted,
+              letterSpacing: 1.5,
+              textTransform: "uppercase",
+            }}
+          >
+            {p.private ? "CONFIDENTIAL" : "LIVE PROJECT"}
+          </span>
+        </div>
+        <h3
+          style={{
+            color: T.text,
+            fontSize: 17,
+            marginBottom: 8,
+            fontWeight: 700,
+            letterSpacing: -0.2,
+          }}
+        >
+          {p.title}
+        </h3>
+        <p
+          style={{
+            color: T.muted,
+            fontSize: 13.5,
+            lineHeight: 1.7,
+            marginBottom: 18,
+            minHeight: "3.4em",
+          }}
+        >
+          {p.desc}
+        </p>
+        <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 16 }}>
           {p.tags.map((t) => (
             <span
               key={t}

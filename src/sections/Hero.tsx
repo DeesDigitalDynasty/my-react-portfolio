@@ -208,7 +208,11 @@ export function Hero({ T }: { T: Theme }) {
           <button
             style={btnSecondary}
             onClick={() =>
-              document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+              window.open(
+                "https://wa.me/2349036267839?text=Hi%20Oludayo%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch!",
+                "_blank",
+                "noopener,noreferrer"
+              )
             }
             onMouseEnter={(e) => {
               Object.assign(e.currentTarget.style, {
