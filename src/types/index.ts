@@ -27,6 +27,8 @@ export interface Project {
   tags: string[];
   color: string;
   emoji: string;
+  link: string | null;
+  private: boolean;
 }
 
 export interface Skill {

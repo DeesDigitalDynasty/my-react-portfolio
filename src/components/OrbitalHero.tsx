@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import type { Theme } from "../types";
 import { ORB } from "../data/orbData";
 import { adjustLight } from "../utils/adjustLight";
+import { OrbIcon } from "./OrbIcon";
 import photo from "../assets/Pro Pic.jpg";
 
 export function OrbitalHero({ T }: { T: Theme }) {
@@ -91,7 +92,6 @@ export function OrbitalHero({ T }: { T: Theme }) {
           const isExp = expanded === item.id;
           const isRel = pulseIds.includes(item.id);
           const nc    = T.dark ? item.color : adjustLight(item.color);
-          const isTextIcon = item.icon.length <= 2 && !/\p{Emoji_Presentation}/u.test(item.icon);
 
           return (
             <div key={item.id}
@@ -109,9 +109,9 @@ export function OrbitalHero({ T }: { T: Theme }) {
                 background: isExp ? nc : isRel ? `${nc}44` : (T.dark ? "#03060a" : "#eef2f7"),
                 border: `2px solid ${isExp || isRel ? nc : `${nc}66`}`,
                 boxShadow: isExp ? `0 0 22px ${nc}88, 0 0 44px ${nc}33` : "none",
-                transition:"all .28s", fontSize: isTextIcon ? 11 : 16, fontWeight:700,
+                transition:"all .28s", fontSize: 14, fontWeight:700,
                 color: isExp ? "#fff" : nc }}>
-                {item.icon}
+                <OrbIcon name={item.icon} size={18} color={isExp ? "#fff" : nc} title={item.title} />
               </div>
 
               <div style={{ position:"absolute", top:44, left:"50%", transform:"translateX(-50%)",
